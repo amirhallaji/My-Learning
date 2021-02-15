@@ -9,6 +9,8 @@
   - [What is VCS](#what-is-vcs)
   - [Advantages](#advantages)
   - [VCS Types](#vcs-types)
+    - [CVCS](#cvcs)
+    - [DVCS](#dvcs)
   - [Git commands](#git-commands)
     - [config](#config)
     - [initialize](#initialize)
@@ -39,15 +41,33 @@
   - [Conflicts](#conflicts)
 
 
-## Some Problems
-...
 
 ## What is VCS
 In software engineering, version control is a class of systems responsible for managing changes to computer programs, documents, large web sites, or other collections of information. Version control is a component of software configuration management.
 
-## Advantages
+## Advantages of VCS
+The answer ot the questions below are the advantages of VCS:
+
+- Have you ever tried to return to previous versions in your projects?
+- Have you ever lost your code?
+- Have you shared your code with others?
+- Have you felt the need of reviewing the history of the project?
 
 ## VCS Types
+### CVCS
+<p align="center">
+<img src="images/cvcs.png" width="480" height="300">
+<br>
+<b>Centrialiazed version control system</b>
+</p>
+
+### DVCS
+
+<p align="center">
+<img src="images/dcvs.png" height="300" width="480">
+<br>
+<b>Centrialiazed version control system</b>
+</p>
 
 ## Git commands
 ### config
