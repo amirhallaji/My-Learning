@@ -39,6 +39,7 @@
   - [Merge](#merge)
     - [command](#command)
   - [Conflicts](#conflicts)
+  - [Rebase](#rebase)
   
 
 
