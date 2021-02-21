@@ -39,6 +39,7 @@
   - [Merge](#merge)
     - [command](#command)
   - [Conflicts](#conflicts)
+  
 
 
 
@@ -125,7 +126,7 @@ git rm --cached -r .
 ```
 This will remove all files from stage area.
 
-**Note**:If you use the second command, you won't be able to use command number , because the files are removed from stage area.
+**Note**:If you use the second command, you won't be able to use ```git commit -a -m "commit message"``` , because the files are removed from stage area.
 
 ### Showing differences 
 ```
@@ -145,7 +146,7 @@ This will show you the history of commits in reversal order. Some fields such as
 ```
 git checkout --<file name>
 ```
-It might happen that you want to return to your previous state. In this state, you haven;t entered stage area.
+It might happen that you want to return to your previous state. In this state, you haven't entered stage area.
 In case you want to extend it to all files, use ```.``` instead of file name.
 It acts like ```ctrl + z```.
 
@@ -155,7 +156,7 @@ git reset HEAD <filename>
 ```
 You have entered stage area, but you want to remove your changes there.
 
-**Note**: Although you will quit from stage area, but you still can use command number --.
+**Note**: Although you will quit from stage area, but you still can use ```git commit -a -m "commit message"```.
 
 <p align="center"> <img src="images/reset1.png"</p>
 
@@ -164,7 +165,7 @@ In this state, you want to return to a specific commit. It is called reset commi
 ```
 git reset --hard <commit id>
 ```
-For getting commit IDs, you should refer to command number --.
+For getting commit IDs, you should use ```git log```.
 
 <p align="center"> <img src="images/reset3.png"</p>
 
@@ -263,3 +264,15 @@ Suppose you want to merge branch **name** with **master**. Use this command in m
 
 Some conflicts may occur when you remote to your server and you won't be able to push. So first you must fetch tha latest update, merge the conflicts and then push your commit.
 
+## Rebase
+
+**Rebase** and **Merge** are both ways for integrating changes from one branch to another. But, they do it differently.
+
+- When you use ```git merge master``` in Feature branch, you create a new commit *merge commit* in **Feature** branch which preserves only the last commit of **master** branch.
+  
+  <img float="center" src="images/merge.png">
+
+
+- But when you do rebasing, it is different. If you rebase the *Feature* branch on to *master* branch using ```git rebase master``` in **Feature** branch, it moves the entire *Feature* branch to begin on the tip of the *master* branch. Rebasing re-writes the project history by creating brand new commits for each commit in the original branch.
+
+<img float="center" src="images/rebase.png">
