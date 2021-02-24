@@ -25,9 +25,8 @@
     - [Showing differences](#showing-differences)
     - [showing log](#showing-log)
     - [Resting](#resting)
-      - [part1](#part1)
-      - [part2](#part2)
-      - [part3](#part3)
+      - [Unstaging](#unstaging)
+      - [Commit reset](#commit-reset)
     - [Remote](#remote)
     - [Push](#push)
     - [Pull](#pull)
@@ -44,6 +43,9 @@
     - [command](#command)
   - [Conflicts](#conflicts)
   - [Rebase](#rebase)
+  - [Other](#other)
+    - [git configuration in jetbrains IDE](#git-configuration-in-jetbrains-ide)
+  
   
 
 ## Some Problems
@@ -133,7 +135,12 @@ git commit -m "commit message"
 ```
 By using this command, all of the changes are saved in repository. After using this command, use ```git status``` and you'll see that the phrase below will be shown.
 
-<p align="center"><u>nothing to commit, working tree clean</u></p>
+<p align="center">
+<img src="images/status.png">
+<caption><u>nothing to commit, working tree clean</u></caption>
+</imge>
+</p>
+
 
 There is one other command you can use. The command below will both add and commit, but you must pay attention that you can only use it when you have added your files to the stage area at least once.
 ```
@@ -142,26 +149,13 @@ git commit -a -m "commit message"
 
 <hr>
 
-### Deleting from stage area
-
-```
-git rm --cached <filename>
-```
-This command will remove your file from stage area.
-
-```
-git rm --cached -r .
-```
-This will remove all files from stage area.
-
-**Note**: If you use the second command, you won't be able to use ```git commit -a -m "commit message"```, because the files are removed from stage area.
-
-### Showing differences 
+### Showing differences 🤛🤜
 ```
 git diff
 ```
 This will show the differences between **now** and the **last time adding to the stage area**. 
 
+<hr>
 
 ### showing log
 ```
@@ -169,18 +163,26 @@ git log
 ```
 This will show you the history of commits in reversal order. Some fields such as name, email, and the commit IDs will be shown. By using ```git log --oneline```, you can see history of commits in line. For instance, the command ```git log -2``` will show you the last 2 commits.
 
-### Restting
-#### part1
-```
-git checkout --<file name>
-```
-It might happen that you want to return to your previous state. In this state, you haven't entered stage area.
-In case you want to extend it to all files, use ```.``` instead of file name.
-It acts like ```ctrl + z```.
+<hr>
 
-#### part2
+### Restting
+#### Unstaging
+
+```bash
+git rm --cached <filename>
 ```
-git reset HEAD <filename>
+This command will remove your file from stage area.(Unstaging the file)
+
+```bash
+git rm --cached -r .
+```
+This will remove all files from stage area.
+
+**Note**: If you use the second command, you won't be able to use ```git commit -a -m "commit message"```, because the files are removed from stage area.
+
+
+```bash
+git reset HEAD -- <filename>
 ```
 You have entered stage area, but you want to remove your changes there.
 
@@ -188,9 +190,11 @@ You have entered stage area, but you want to remove your changes there.
 
 <p align="center"> <img src="images/reset1.png"</p>
 
-#### part3
+
+#### Commit reset
 In this state, you want to return to a specific commit. It is called reset commit. For this, you have to know the ID of that commit.
-```
+
+```bash
 git reset --hard <commit id>
 ```
 For getting commit IDs, you should use ```git log```.
@@ -199,19 +203,19 @@ For getting commit IDs, you should use ```git log```.
 
 
 ### Remote
-```
+```bash
 git remote add origin <repository link>
 ```
 Use this command if you want to remote to your project in github or gitlab.
 
 ### Push
-```
+```bash
 git push origin master
 ```
 This will upload your project to your github/gitlab repository.
 
 ### Pull
-```
+```bash
 git pull origin master
 ```
 This will fetch the latest updates made by your collaborators or in other ways.
@@ -304,3 +308,22 @@ Some conflicts may occur when you remote to your server and you won't be able to
 - But when you do rebasing, it is different. If you rebase the *Feature* branch on to *master* branch using ```git rebase master``` in **Feature** branch, it moves the entire *Feature* branch to begin on the tip of the *master* branch. Rebasing re-writes the project history by creating brand new commits for each commit in the original branch.
 
 <img float="center" src="images/rebase.png">
+
+
+## Other
+
+### git configuration in Jetbrains IDE
+
+<p align="center">
+<img src="images/jetbrains.png"></img>
+</p>
+
+
+
+
+```
+git checkout --<file name>
+```
+It might happen that you want to return to your previous state. In this state, you haven't entered stage area.
+In case you want to extend it to all files, use ```.``` instead of file name.
+It acts like ```ctrl + z```.
