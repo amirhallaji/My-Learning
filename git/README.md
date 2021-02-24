@@ -242,6 +242,8 @@ git pull origin master
 ```
 This will fetch the latest updates made by your collaborators or in other ways.
 
+<hr>
+
 ### Clone
 ```
 git clone <repository link>
@@ -340,7 +342,7 @@ Some conflicts may occur when you remote to your server and you won't be able to
 
 <img float="center" src="images/rebase.png">
 
-
+<hr>
 ## Other
 
 ### git configuration in Jetbrains IDE
@@ -349,7 +351,11 @@ Some conflicts may occur when you remote to your server and you won't be able to
 <img src="images/jetbrains.png"></img>
 </p>
 
+<hr>
+
 ### Export as PDF
+
+<hr>
 
 ## Other Resources
 
