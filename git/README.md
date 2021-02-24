@@ -1,3 +1,7 @@
+<body>
+
+</body>
+
 <p>
 <img src="images/git-logo.jpg">
 <h1 align="center">Git</h1>
@@ -42,25 +46,37 @@
   - [Rebase](#rebase)
   
 
+## Some Problems
 
-
-## What is VCS
-In software engineering, version control is a class of systems responsible for managing changes to computer programs, documents, large web sites, or other collections of information. Version control is a component of software configuration management.
-
-## Advantages of VCS
-The answer ot the questions below are the advantages of VCS:
 
 - Have you ever tried to return to previous versions in your projects?
 - Have you ever lost your code?
 - Have you shared your code with others?
 - Have you felt the need of reviewing the history of the project?
 
+
+<p align="center">
+<img src="images/thinking.png" width=""></img>
+</p>
+
+
+## What is VCS 🤷‍♂️
+In software engineering, version control is a class of systems responsible for managing changes to computer programs, documents, large web sites, or other collections of information. Version control is a component of software configuration management.
+
+## Advantages of VCS 🙋‍♂️
+By answering the questions mentioned above, the advantages of VCS are mentioned.
+
+<p align="center">
+<img src="images/reached.png"></img>
+</p>
+
+
 ## VCS Types
 ### CVCS
 <p align="center">
 <img src="images/cvcs.png" width="480" height="300">
 <br>
-<b>Centrialiazed version control system</b>
+<strong>Centrialiazed version control system</strong>
 </p>
 
 ### DVCS
@@ -68,22 +84,27 @@ The answer ot the questions below are the advantages of VCS:
 <p align="center">
 <img src="images/dcvs.png" height="300" width="480">
 <br>
-<b>Centrialiazed version control system</b>
+<strong>Centrialiazed version control system</strong>
 </p>
 
-## Git commands
-### config
+## Git commands 😎
+### config name and email
 ```
 git config --global user.name "your name"
 git config --global user.email "your email"
 ```
 
 This will save your name and email and will be shown in your commit history.
+
+<hr>
+
 ### initialize
 ```commandline
 git init
 ```
 This command initializes an empty repository. It's the first step to create a repository.
+
+<hr>
 
 ### adding to stage
 ```commandline
@@ -95,11 +116,15 @@ git add -A
 git add .
 ```
 
+<hr>
+
 ### status
 ```
 git status
 ```
-By this command, we understand the conditions of the files. For instance, if we had used ```git add -A``` before, the files are shown in green color in terminal, otherwise they are shown in red.
+By this command, we understand the conditions of the files. For instance, if we had used ```git add -A``` before, the files are shown in <span style="color:green">green</span> color in terminal, otherwise they are shown in <span style="color:red">red</span>.
+
+<hr>
 
 
 ### commit
@@ -115,6 +140,8 @@ There is one other command you can use. The command below will both add and comm
 git commit -a -m "commit message"
 ```
 
+<hr>
+
 ### Deleting from stage area
 
 ```
@@ -127,7 +154,7 @@ git rm --cached -r .
 ```
 This will remove all files from stage area.
 
-**Note**:If you use the second command, you won't be able to use ```git commit -a -m "commit message"``` , because the files are removed from stage area.
+**Note**: If you use the second command, you won't be able to use ```git commit -a -m "commit message"```, because the files are removed from stage area.
 
 ### Showing differences 
 ```
