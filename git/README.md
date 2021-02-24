@@ -49,7 +49,8 @@
     - [Export as PDF](#export-as-pdf)
   - [Other Resources](#other-resources)
 
-## Some Problems 👨‍🦯
+## Some Problems 
+👨‍🦯
 
 
 - Have you ever tried to return to previous versions in your projects?
@@ -63,10 +64,12 @@
 </p>
 
 
-## What is VCS 🤷‍♂️
+## What is VCS 
+🤷‍♂️
 In software engineering, version control is a class of systems responsible for managing changes to computer programs, documents, large web sites, or other collections of information. Version control is a component of software configuration management.
 
-## Advantages of VCS 🙋‍♂️
+## Advantages of VCS 
+🙋‍♂️
 By answering the questions mentioned above, the advantages of VCS are mentioned.
 
 <p align="center">
