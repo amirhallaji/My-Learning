@@ -9,6 +9,7 @@
 
 # Table of Content
 
+
   - [Some Problems](#some-problems)
   - [What is VCS](#what-is-vcs)
   - [Advantages](#advantages)
@@ -24,7 +25,7 @@
     - [Deleting from stage area](#deleting-from-stage-area)
     - [Showing differences](#showing-differences)
     - [showing log](#showing-log)
-    - [Resting](#resting)
+    - [Restting](#restting)
       - [Unstaging](#unstaging)
       - [Commit reset](#commit-reset)
     - [Remote](#remote)
@@ -41,14 +42,14 @@
     - [Deleting Branch](#deleting-branch)
   - [Merge](#merge)
     - [command](#command)
-  - [Conflicts](#conflicts)
+  - [Resolving Conflicts](#resolving-conflicts)
   - [Rebase](#rebase)
   - [Other](#other)
     - [git configuration in jetbrains IDE](#git-configuration-in-jetbrains-ide)
-  
-  
+    - [Export as PDF](#export-as-pdf)
+  - [Other Resources](#other-resources)
 
-## Some Problems
+## Some Problems 👨‍🦯
 
 
 - Have you ever tried to return to previous versions in your projects?
@@ -89,9 +90,11 @@ By answering the questions mentioned above, the advantages of VCS are mentioned.
 <strong>Centrialiazed version control system</strong>
 </p>
 
-## Git commands 😎
+## Git commands 
+😎
 ### config name and email
-```
+
+```bash
 git config --global user.name "your name"
 git config --global user.email "your email"
 ```
@@ -100,28 +103,34 @@ This will save your name and email and will be shown in your commit history.
 
 <hr>
 
-### initialize
-```commandline
+### initialize 
+🏃‍♀️
+
+```bash
 git init
 ```
 This command initializes an empty repository. It's the first step to create a repository.
 
 <hr>
 
-### adding to stage
-```commandline
+### adding to stage 
+➕
+```bash
 git add <filename>
 ```
 - In case you want to add all of the files to the stage area, you should use one of the commands below.
-```commandline
+- 
+```bash
 git add -A
 git add .
 ```
 
 <hr>
 
-### status
-```
+### status 
+❔
+
+```bash
 git status
 ```
 By this command, we understand the conditions of the files. For instance, if we had used ```git add -A``` before, the files are shown in <span style="color:green">green</span> color in terminal, otherwise they are shown in <span style="color:red">red</span>.
@@ -129,8 +138,9 @@ By this command, we understand the conditions of the files. For instance, if we 
 <hr>
 
 
-### commit
-```
+### commit 
+
+```bash
 git commit -m "commit message"
 ```
 By using this command, all of the changes are saved in repository. After using this command, use ```git status``` and you'll see that the phrase below will be shown.
@@ -143,14 +153,17 @@ By using this command, all of the changes are saved in repository. After using t
 
 
 There is one other command you can use. The command below will both add and commit, but you must pay attention that you can only use it when you have added your files to the stage area at least once.
-```
+
+```bash
 git commit -a -m "commit message"
 ```
 
 <hr>
 
-### Showing differences 🤛🤜
-```
+### Showing differences 
+🤛🤜
+
+```bash
 git diff
 ```
 This will show the differences between **now** and the **last time adding to the stage area**. 
@@ -158,7 +171,8 @@ This will show the differences between **now** and the **last time adding to the
 <hr>
 
 ### showing log
-```
+
+```bash
 git log
 ```
 This will show you the history of commits in reversal order. Some fields such as name, email, and the commit IDs will be shown. By using ```git log --oneline```, you can see history of commits in line. For instance, the command ```git log -2``` will show you the last 2 commits.
@@ -201,6 +215,7 @@ For getting commit IDs, you should use ```git log```.
 
 <p align="center"> <img src="images/reset3.png"</p>
 
+<hr>
 
 ### Remote
 ```bash
@@ -208,11 +223,15 @@ git remote add origin <repository link>
 ```
 Use this command if you want to remote to your project in github or gitlab.
 
+<hr>
+
 ### Push
 ```bash
 git push origin master
 ```
 This will upload your project to your github/gitlab repository.
+
+<hr>
 
 ### Pull
 ```bash
@@ -224,13 +243,15 @@ This will fetch the latest updates made by your collaborators or in other ways.
 ```
 git clone <repository link>
 ```
-This will download the repository from the link given.
+This will download the repository from the link given. (<strong>.git</strong> folder will be in the file.)
+
+<hr>
 
 ## .gitignore
 There are some files or directories that there is no need to be tracked by git.
 Files such as ```.class``` are unncessary files which may cause some problems after being fetched.
 
-```
+```bash
 touch .gitignore
 ```
 This will create a .gitignore file for you. In this file, you write files or directories that you don't want to be tracked by git.
@@ -238,6 +259,8 @@ This will create a .gitignore file for you. In this file, you write files or dir
 <p align="center"><img src="images/gitignore.png"</p>
 <p align="center"><img src="images/gitign.png"</p>
 <p align="center">gitignore file content</p>
+
+<hr>
 
 ## Branches
 
@@ -249,14 +272,14 @@ The default branch is master. You can create different branches in your project 
 ## Branch usage
 Suppose you're woking on the project and have developed different versions of that. You have to keep each version seperate from others. Beacuse we have learnt git by now, we keep different versions in different branches. Now we can keep the first version of the project and start to develop the next versions.
 
-<p align="center"><img src="images/branch.png"></p>
+<p align="center"><img src="images/branch.png" width="500px"></p>
 
 
 ## commands
 
 ### Creating Branch
 
-```
+```bash
 git branch <name>
 ```
 The command above will create a branch named **name**.
@@ -264,14 +287,15 @@ The command above will create a branch named **name**.
 
 ### Showing all Branches
 
-```
+```bash
 git branch -a
 ```
 This will show you the list of all branches.
 
 
 ### Changing between branches
-```
+
+```bash
 git checkout <name>
 ```
 By using this command, you will switch from the current branch to the **name** branch.
@@ -279,22 +303,26 @@ By using this command, you will switch from the current branch to the **name** b
 
 ### Deleting Branch
 
-```
+```bash
 git branch -d <name>
 ```
 This will delete the **name** branch.
+
+<hr>
 
 ## Merge
 Suppose you and your friend are developing an application. You do the back-end and your friend do the front-end. At last, These two should be merged.
 
 ### command
-```
+```bash
 git merge <name>
 ```
-Suppose you want to merge branch **name** with **master**. Use this command in master branch.
-## Conflicts
+Suppose you want to merge branch **name** with **master**. Use this command in master branch. After using this command, you have to do a merge commit.
+## Resolving Conflicts
 
 Some conflicts may occur when you remote to your server and you won't be able to push. So first you must fetch tha latest update, merge the conflicts and then push your commit.
+
+<hr>
 
 ## Rebase
 
@@ -318,7 +346,9 @@ Some conflicts may occur when you remote to your server and you won't be able to
 <img src="images/jetbrains.png"></img>
 </p>
 
+### Export as PDF
 
+## Other Resources
 
 
 ```
