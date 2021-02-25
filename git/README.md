@@ -49,6 +49,7 @@
     - [git configuration in jetbrains IDE](#git-configuration-in-jetbrains-ide)
     - [Export as PDF](#export-as-pdf)
   - [Other Resources](#other-resources)
+- [Contact](#contact)
 
 ## Some Problems 
 👨‍🦯
@@ -227,6 +228,9 @@ git checkout -- <filename>
 git restore <filename>
 ```
 By using one of these two commands, you discard changes from working area.
+It might happen that you want to return to your previous state. In this state, you haven't entered stage area and had commited that file before at least once.
+In case you want to extend it to all files, use ```.``` instead of file name.
+It acts like ```ctrl + z```.
 
 
 <hr>
@@ -354,6 +358,7 @@ Some conflicts may occur when you remote to your server and you won't be able to
 <img float="center" src="images/rebase.png">
 
 <hr>
+
 ## Other
 
 ### git configuration in Jetbrains IDE
@@ -362,18 +367,58 @@ Some conflicts may occur when you remote to your server and you won't be able to
 <img src="images/jetbrains.png"></img>
 </p>
 
+
+You can use git as a GUI application, although I recommend you to use commands instead, but this would not be so bad if you learn how to work with. 
+
+You should follow these steps.
+
+<ol>
+<li>
+Click on <strong>VCS</strong>
+<img src="images/ide1.png"></img>
+</li>
+
+<li>
+Then click on <strong>Enable version control Integeration and choose <u>Git</u>.</strong>
+<img src="images/ide2.png"></img>
+</li>
+
+<li>
+In case you want to <strong>Commit, Push or Pull</strong>, do as it's shown below.
+<img src="images/ide3.png"></img>
+</li>
+
+</ol>
+
+- In case you want to get a project from version control, you should do this👇 and then paste the repository link in repository URL.
+
+<img src="images/ide4.png"></img>
+
 <hr>
 
 ### Export as PDF
+
+Use this command to export this markdown file as a PDF file.
+
+```bash
+pandoc README.md -t beamer -o panc.pdf --pdf-engine=xelatex
+```
 
 <hr>
 
 ## Other Resources
 
+- [Roozbe Sharifnasab's slide](https://github.com/rsharifnasab/my-learning/tree/master/git)
+- [Parsa Hejabi's slide](http://slides.com/parsahejabi/git#/1)
+- [Git workflow-Atlassian Tutorial](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+- [Git Explorer](https://gitexplorer.com/)
+- [Jadi Mirmirani's Videos](https://faradars.org/courses/fvgit9609-git-github-gitlab)
+- [Git-scm](https://git-scm.com/)
+  
+## Contact
 
-```
-git checkout --<file name>
-```
-It might happen that you want to return to your previous state. In this state, you haven't entered stage area.
-In case you want to extend it to all files, use ```.``` instead of file name.
-It acts like ```ctrl + z```.
+<a href="mailto:a.hallaji.b@gmail.com"><img src ="https://img.shields.io/static/v1?label=Email&message=a.hallaji.b@gmail.com&color=orange">
+</img></a>
+
+<a href="mailto:a.hallaji.b@gmail.com"><img src ="https://img.shields.io/static/v1?label=Telegram&message=amirhallaji&color=informational">
+</img></a>
