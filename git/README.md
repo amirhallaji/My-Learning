@@ -2,7 +2,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![WebSite][website-shield]](https://amirhallaji.com)
 
 
 <p>
@@ -20,6 +19,10 @@
     - [CVCS](#cvcs)
     - [DVCS](#dvcs)
   - [Github](#github)
+    - [Github VS Git](#github-vs-git)
+    - [Fork](#fork)
+    - [Star](#star)
+    - [Gist](#gist)
   - [Git commands](#git-commands)
     - [config](#config)
     - [initialize](#initialize)
@@ -38,12 +41,12 @@
     - [Clone](#clone)
   - [.gitignore](#gitignore)
   - [Branches](#branches)
-  - [Branch usage](#branch-usage)
-  - [commands](#commands)
-    - [Creating Branch](#creating-branch)
-    - [Showing all Branches](#showing-all-branches)
-    - [Changing between branches](#changing-between-branches)
-    - [Deleting Branch](#deleting-branch)
+    - [Branch usage](#branch-usage)
+    - [commands](#commands)
+      - [Creating Branch](#creating-branch)
+      - [Showing all Branches](#showing-all-branches)
+      - [Changing between branches](#changing-between-branches)
+      - [Deleting Branch](#deleting-branch)
   - [Merge](#merge)
     - [command](#command)
   - [Resolving Conflicts](#resolving-conflicts)
@@ -99,6 +102,34 @@ By answering the questions mentioned above, the advantages of VCS are mentioned.
 </p>
 
 ## Github
+GitHub is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.
+
+**Github is instagram for gits.**
+It's where people share the source code of their projects.
+
+### Github VS Git
+
+<p align="center">
+<img src="images/githubvsgit.png"></img>
+</p>
+
+### Fork
+
+After using GitHub by yourself for a while, you may find yourself wanting to contribute to someone else's project. Or maybe you'd like to use someone's project as the starting point for your own. This process is known as forking. Creating a “fork” is producing a personal copy of someone else's project.
+
+<p align="center">
+<img src="images/fork.png"></img>
+</p>
+
+### Star
+
+It's exactly like **like** in instagram or **fave** in Twitter.
+
+<p align="center">
+<img src="images/star.jpg" width="300px"></img>
+</p>
+
+### Gist
 
 ## Git commands 
 😎
@@ -294,15 +325,15 @@ The default branch is master. You can create different branches in your project 
 <p align="center"><img src="images/branch1.png"></p>
 
 
-## Branch usage
+### Branch usage
 Suppose you're woking on the project and have developed different versions of that. You have to keep each version seperate from others. Beacuse we have learnt git by now, we keep different versions in different branches. Now we can keep the first version of the project and start to develop the next versions.
 
 <p align="center"><img src="images/branch.png" width="500px"></p>
 
 
-## commands
+### Branch commands
 
-### Creating Branch
+#### Creating Branch
 
 ```bash
 git branch <name>
@@ -310,7 +341,7 @@ git branch <name>
 The command above will create a branch named **name**.
 
 
-### Showing all Branches
+#### Showing all Branches
 
 ```bash
 git branch -a
@@ -318,7 +349,7 @@ git branch -a
 This will show you the list of all branches.
 
 
-### Changing between branches
+#### Changing between branches
 
 ```bash
 git checkout <name>
@@ -326,7 +357,7 @@ git checkout <name>
 By using this command, you will switch from the current branch to the **name** branch.
 
 
-### Deleting Branch
+#### Deleting Branch
 
 ```bash
 git branch -d <name>
@@ -438,4 +469,3 @@ pandoc README.md -t beamer -o panc.pdf --pdf-engine=xelatex
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/amirhallaj
-[website-shield]: https://img.shields.io/static/v1?label=Website&message=amirhalllaji.com&color=yellow
