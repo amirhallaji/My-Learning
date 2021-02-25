@@ -23,6 +23,7 @@
     - [Fork](#fork)
     - [Star](#star)
     - [Gist](#gist)
+    - [Pull Request](#pull-request)
   - [Git commands](#git-commands)
     - [config](#config)
     - [initialize](#initialize)
@@ -130,6 +131,19 @@ It's exactly like **like** in instagram or **fave** in Twitter.
 </p>
 
 ### Gist
+
+Gist is an easy method to share snippets or excerpts of data with others. A gist can be a string of code, a bash script or some other small piece of data. These bits of information are hosted by GitHub as a repository. 
+
+<p align="center">
+<img src="images/gist.jpg"></img>
+</p>
+
+### Pull Request
+Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.
+
+<p align="center">
+<img src="images/pull-request.png" width="200px" height="200px"></img>
+</p>
 
 ## Git commands 
 😎
