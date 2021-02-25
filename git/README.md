@@ -26,7 +26,6 @@
     - [adding to stage](#adding-to-stage)
     - [status](#status)
     - [commit](#commit)
-    - [Deleting from stage area](#deleting-from-stage-area)
     - [Showing differences](#showing-differences)
     - [showing log](#showing-log)
     - [Restting](#restting)
