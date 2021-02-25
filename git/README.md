@@ -28,6 +28,7 @@
     - [Restting](#restting)
       - [Unstaging](#unstaging)
       - [Commit reset](#commit-reset)
+      - [Discard Changes from working area](#discard-changes-from-working-area)
     - [Remote](#remote)
     - [Push](#push)
     - [Pull](#pull)
@@ -122,7 +123,7 @@ This command initializes an empty repository. It's the first step to create a re
 git add <filename>
 ```
 - In case you want to add all of the files to the stage area, you should use one of the commands below.
-- 
+  
 ```bash
 git add -A
 git add .
@@ -217,6 +218,16 @@ git reset --hard <commit id>
 For getting commit IDs, you should use ```git log```.
 
 <p align="center"> <img src="images/reset3.png"</p>
+
+#### Discarding Changes from working area
+
+```bash
+git checkout -- <filename>
+
+git restore <filename>
+```
+By using one of these two commands, you discard changes from working area.
+
 
 <hr>
 
