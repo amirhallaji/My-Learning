@@ -1,6 +1,9 @@
-<body>
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![WebSite][website-shield]](https://amirhallaji.com)
 
-</body>
 
 <p>
 <img src="images/git-logo.jpg">
@@ -16,6 +19,7 @@
   - [VCS Types](#vcs-types)
     - [CVCS](#cvcs)
     - [DVCS](#dvcs)
+  - [Github](#github)
   - [Git commands](#git-commands)
     - [config](#config)
     - [initialize](#initialize)
@@ -67,11 +71,11 @@
 
 
 ## What is VCS 
-🤷‍♂️
-In software engineering, version control is a class of systems responsible for managing changes to computer programs, documents, large web sites, or other collections of information. Version control is a component of software configuration management.
+
+  In software engineering, version control is a class of systems responsible for managing changes to computer programs, documents, large web sites, or other collections of information. Version control is a component of software configuration management.
 
 ## Advantages of VCS 
-🙋‍♂️
+
 By answering the questions mentioned above, the advantages of VCS are mentioned.
 
 <p align="center">
@@ -94,6 +98,8 @@ By answering the questions mentioned above, the advantages of VCS are mentioned.
 <br>
 <strong>Centrialiazed version control system</strong>
 </p>
+
+## Github
 
 ## Git commands 
 😎
@@ -422,3 +428,15 @@ pandoc README.md -t beamer -o panc.pdf --pdf-engine=xelatex
 
 <a href="mailto:a.hallaji.b@gmail.com"><img src ="https://img.shields.io/static/v1?label=Telegram&message=amirhallaji&color=informational">
 </img></a>
+
+
+[forks-shield]: https://img.shields.io/github/forks/amirhallaji/My-learning
+[forks-url]: https://github.com/amirhallaji/My-learning/network/members
+[stars-shield]: https://img.shields.io/github/stars/amirhallaji/My-learning
+[stars-url]: https://github.com/amirhallaji/My-learning/stargazers
+[issues-shield]: https://img.shields.io/github/issues/amirhallaji/My-learning
+[issues-url]: https://github.com/amirhallaji/My-learning/issues
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/amirhallaj
+[website-shield]: https://img.shields.io/static/v1?label=Website&message=amirhalllaji.com&color=yellow
