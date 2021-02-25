@@ -24,6 +24,8 @@
     - [Star](#star)
     - [Gist](#gist)
     - [Pull Request](#pull-request)
+  - [.gitignore](#gitignore)
+  
   - [Git commands](#git-commands)
     - [config](#config)
     - [initialize](#initialize)
@@ -40,7 +42,6 @@
     - [Push](#push)
     - [Pull](#pull)
     - [Clone](#clone)
-  - [.gitignore](#gitignore)
   - [Branches](#branches)
     - [Branch usage](#branch-usage)
     - [commands](#commands)
@@ -144,6 +145,24 @@ Pull requests let you tell others about changes you've pushed to a branch in a r
 <p align="center">
 <img src="images/pull-request.png" width="200px" height="200px"></img>
 </p>
+
+
+
+## .gitignore
+There are some files or directories that there is no need to be tracked by git.
+Files such as ```.class``` are unncessary files which may cause some problems after being fetched.
+
+```bash
+touch .gitignore
+```
+This will create a .gitignore file for you. In this file, you write files or directories that you don't want to be tracked by git.
+
+<p align="center"><img src="images/gitignore.png"</p>
+<p align="center"><img src="images/gitign.png"</p>
+<p align="center">gitignore file content</p>
+
+<hr>
+
 
 ## Git commands 
 😎
@@ -314,21 +333,6 @@ This will fetch the latest updates made by your collaborators or in other ways.
 git clone <repository link>
 ```
 This will download the repository from the link given. (<strong>.git</strong> folder will be in the file.)
-
-<hr>
-
-## .gitignore
-There are some files or directories that there is no need to be tracked by git.
-Files such as ```.class``` are unncessary files which may cause some problems after being fetched.
-
-```bash
-touch .gitignore
-```
-This will create a .gitignore file for you. In this file, you write files or directories that you don't want to be tracked by git.
-
-<p align="center"><img src="images/gitignore.png"</p>
-<p align="center"><img src="images/gitign.png"</p>
-<p align="center">gitignore file content</p>
 
 <hr>
 
