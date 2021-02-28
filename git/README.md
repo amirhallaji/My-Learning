@@ -24,8 +24,10 @@
     - [Star](#star)
     - [Gist](#gist)
     - [Pull Request](#pull-request)
+    - [Issues](#issues)
+    - [README](#readme)
   - [.gitignore](#gitignore)
-  
+  - [Git Life cycle](#git-life-cycle)
   - [Git commands](#git-commands)
     - [config](#config)
     - [initialize](#initialize)
@@ -37,7 +39,7 @@
     - [Restting](#restting)
       - [Unstaging](#unstaging)
       - [Commit reset](#commit-reset)
-      - [Discard Changes from working area](#discard-changes-from-working-area)
+      - [Discarding Changes from working area](#discarding-changes-from-working-area)
     - [Remote](#remote)
     - [Push](#push)
     - [Pull](#pull)
@@ -106,6 +108,10 @@ By answering the questions mentioned above, the advantages of VCS are mentioned.
 ## Github
 GitHub is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.
 
+<p align="center">
+<img src="images/githublogo.png"></img>
+</p>
+
 **Github is instagram for gits.**
 It's where people share the source code of their projects.
 
@@ -146,7 +152,17 @@ Pull requests let you tell others about changes you've pushed to a branch in a r
 <img src="images/pull-request.png" width="200px" height="200px"></img>
 </p>
 
+### Issues
+projects. They’re kind of like email, except they can be shared and discussed with the rest of your team.
 
+<p align="center">
+<img src="images/issues.png"></img>
+</p>
+
+### README
+
+README is a markdown file in which you can describle your project and mention how it runs. It is written in **markdown**
+language. For more information about markdown, follow [this link](https://guides.github.com/features/mastering-markdown/).
 
 ## .gitignore
 There are some files or directories that there is no need to be tracked by git.
@@ -163,6 +179,11 @@ This will create a .gitignore file for you. In this file, you write files or dir
 
 <hr>
 
+## Git Life Cycle
+
+<p align="center">
+<img src="images/git-lifecycle.png"></img>
+</p>
 
 ## Git commands 
 😎
