@@ -331,6 +331,11 @@ git remote add origin <repository link>
 ```
 Use this command if you want to remote to your project in github or gitlab.
 
+```bash
+git config --get remote.origin.url
+```
+This command will give you the URL of the repository to which you have remoted.
+
 <hr>
 
 ### Push
