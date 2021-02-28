@@ -507,4 +507,4 @@ pandoc README.md -t beamer -o panc.pdf --pdf-engine=xelatex
 [issues-url]: https://github.com/amirhallaji/My-learning/issues
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/amirhallaj
+[linkedin-url]: https://www.linkedin.com/in/amirhallaji
