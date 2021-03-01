@@ -187,7 +187,7 @@ This will create a .gitignore file for you. In this file, you write files or dir
 
 ## Git commands 
 😎
-### config name and email
+### config
 
 ```bash
 git config --global user.name "your name"
@@ -195,6 +195,11 @@ git config --global user.email "your email"
 ```
 
 This will save your name and email and will be shown in your commit history.
+
+```bash
+cat ~/.gitconfig
+```
+In case you want to see what your name and email is saved in git, you can see this file and edit it if you want.
 
 <hr>
 
