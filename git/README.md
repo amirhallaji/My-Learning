@@ -153,7 +153,7 @@ Pull requests let you tell others about changes you've pushed to a branch in a r
 </p>
 
 ### Issues
-projects. They’re kind of like email, except they can be shared and discussed with the rest of your team.
+Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. They're kind of like email or discussions in courseware.:)
 
 <p align="center">
 <img src="images/issues.png"></img>
