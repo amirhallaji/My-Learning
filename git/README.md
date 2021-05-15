@@ -11,7 +11,6 @@
 
 # Table of Content
 
-
   - [Some Problems](#some-problems)
   - [What is VCS](#what-is-vcs)
   - [Advantages](#advantages)
