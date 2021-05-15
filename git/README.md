@@ -218,12 +218,15 @@ This command initializes an empty repository. It's the first step to create a re
 ```bash
 git add <filename>
 ```
-- In case you want to add all of the files to the stage area, you should use one of the commands below.
+In case you want to add all of the files to the stage area, you should use one of the commands below.
+
   
 ```bash
 git add -A
 git add .
 ```
+
+**Note**: Untracked files are such files that have not been added to stage before.
 
 <hr>
 
@@ -245,6 +248,7 @@ git commit -m "commit message"
 ```
 By using this command, all of the changes are saved in repository. After using this command, use ```git status``` and you'll see that the phrase below will be shown.
 
+
 <p align="center">
 <img src="images/status.png">
 <caption><u>nothing to commit, working tree clean</u></caption>
@@ -257,6 +261,8 @@ There is one other command you can use. The command below will both add and comm
 ```bash
 git commit -a -m "commit message"
 ```
+
+
 
 <hr>
 
