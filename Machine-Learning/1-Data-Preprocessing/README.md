@@ -22,3 +22,19 @@ and if you want to read all the rows and the last column, then we have:
 y = dataframe.iloc[:, -1]
 ```
 Note: if *.values* is used after iloc, the type of the result is numpy array.
+
+
+### Removing missing data
+
+For locating the missing data, **math** library is good, however it can be done by **scikit-learn**.
+
+```py
+import math
+
+missing_data_col = dataframe.iloc[:, column_index].values
+
+for i in range(len(missing_data_col)):
+      if math.isnan(missing_data_col[i]):
+            # do what you want.
+```
+
