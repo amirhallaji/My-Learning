@@ -21,3 +21,4 @@ and if you want to read all the rows and the last column, then we have:
 ```py
 y = dataframe.iloc[:, -1]
 ```
+Note: if *.values* is used after iloc, the type of the result is numpy array.
