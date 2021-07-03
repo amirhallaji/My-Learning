@@ -51,3 +51,25 @@ imputer.fit(X[:, 1:3]) # for example column 1 and 2 have missing values.
 X[:, 1:3] = imputer.transform(X[:, 1:3])
 ```
 
+### Encoding data
+datas which are not a number, for example country name or colors had better to be encoded before using.
+
+#### Encoding features
+
+we can use scikit-learn to encode input features.
+one-hot encoding is a simple way to encode the data. It can be implemented easily. The following code is its implementation using scikit-learn.
+
+```py
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+col_t = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [0])], remainder='passthrough')
+X = np.array(col_t.fit_transform(X))
+```
+
+#### Encoding Labels
+
+```py
+from sklearn.preprocessing import LabelEncoder
+label = LabelEncoder()
+y = label.fit_transform(y)
+```
