@@ -73,3 +73,13 @@ from sklearn.preprocessing import LabelEncoder
 label = LabelEncoder()
 y = label.fit_transform(y)
 ```
+
+### Splitting dataset to train and test
+
+We have to split dataset to train and test. In most of the times, 80% of the dataset is dedicated to train and the other 20% for test.
+Here again, scikit-learn can do it for us the best.
+
+```py
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
+```
