@@ -26,6 +26,8 @@ Note: if *.values* is used after iloc, the type of the result is numpy array.
 
 ### Removing missing data
 
+#### from scratch
+
 For locating the missing data, **math** library is good, however it can be done by **scikit-learn**.
 
 ```py
@@ -36,5 +38,16 @@ missing_data_col = dataframe.iloc[:, column_index].values
 for i in range(len(missing_data_col)):
       if math.isnan(missing_data_col[i]):
             # do what you want.
+```
+
+#### using scikit-learn
+
+Also, we can use scikit-learn to do it.
+
+```py
+from sklearn.impute import SimpleImputer
+imputer = SimpleImputer(missing_values=np.nan, strategy='mean')
+imputer.fit(X[:, 1:3]) # for example column 1 and 2 have missing values.
+X[:, 1:3] = imputer.transform(X[:, 1:3])
 ```
 
