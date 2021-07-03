@@ -2,4 +2,4 @@
 
 - [Git](git/)
 - [Apache-Thrift](Apache-Thrift/)
-- [Machine-Learning](Mavhine-Learning/)
+- [Machine-Learning](Machine-Learning/)
