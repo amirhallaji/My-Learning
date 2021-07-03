@@ -92,7 +92,7 @@ $x_{standard}=\frac{x - mean(x)}{standardDeviation(x)}$
 
 #### Normalization
 
-$x_{norm} = \frac{x-min(x)}{x_{max}-x_{min}}$
+$x_{norm} = \frac{x-x_{min}}{x_{max}-x_{min}}$
 
 #### Implementing using scikit-learn
 
